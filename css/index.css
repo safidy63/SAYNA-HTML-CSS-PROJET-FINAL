@@ -1,0 +1,426 @@
+@import url('http://fonts.cdnfonts.com/css/dejavu-sans-mono');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: 'DejaVu Sans Mono', sans-serif; 
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/*------------------- En tête de page ----------------*/
+header {
+}
+/* Navigation */
+nav {
+  background-color: #d35649;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 10px;
+  color: white;
+}
+/* Logo */
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+.logo img {
+  width: 60px;
+  color: white;
+}
+/* Navigations */
+.navigations {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+.navigation:hover {
+  color: #98a5a5;
+  cursor: pointer;
+}
+.navigation i {
+  padding-right: 10px;
+}
+.fa-wifi {
+  transform: translateY(20%) rotate(45deg);
+}
+
+/* Banner */
+.banner {
+  height: 60vh;
+  background-image: url("../Assets/Images/group-1.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner h2 {
+  color: white;
+}
+.banner .searchBar {
+  width: 50%;
+  background-color: #ffffffb3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.banner .searchBar .groupInput {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+.groupInput input[type="text"] {
+  padding: 7px;
+  width: 90%;
+  border: 1px solid rgba(0, 0, 0, 0.433);
+  border-right: none;
+  border-radius: 2px;
+}
+.groupInput input[type="submit"] {
+  background-color: #d35649;
+  color: white;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+}
+.banner button {
+  background-color: #ffffffb3;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/*------------------- Corps de page ----------------*/
+.corpsPage {
+  margin-top: 20px;
+}
+.corpsPage > h2 {
+  text-align: center;
+  color: #d35649;
+}
+/* Catégories Events */
+.categorieEvents {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.categorieEvents i {
+  font-size: 20px;
+}
+.categorieEvents h3 {
+  padding: 10px 0;
+}
+.categorieEvents p {
+  font-size: 14px;
+  text-align: center;
+}
+.categorie11,
+.categorie13,
+.categorie22,
+.categorie24 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+/* Description events */
+.desc {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 20px 30px;
+  color: white;
+}
+.desc h3,
+.desc p {
+  margin: 10px 0;
+}
+.desc button {
+  background-color: white;
+  padding: 10px;
+  border: none;
+  width: max-content;
+}
+.desc > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.desc img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.desc1 {
+  background-color: #d35649;
+}
+.desc1 button {
+  color: #d35649;
+}
+.desc2 {
+  background-color: #98a5a5;
+}
+.desc2 button {
+  color: #98a5a5;
+}
+.desc3 {
+  background-color: #509bd7;
+}
+
+/*------------------- Pied de page ----------------*/
+footer {
+  color: white;
+  background-color: black;
+  padding: 20px 20px 0 20px;
+}
+footer .barre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Barre */
+.barre > div {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #98a5a5;
+  border-bottom: 1px solid #98a5a5;
+}
+.barre span {
+  margin: 0 10px;
+}
+.barre span:hover{
+  color: #98a5a5;
+}
+.barre > i {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #98a5a5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+/* Information */
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+}
+.information > div {
+  padding: 40px 40px 0 40px;
+  text-align: center;
+}
+.information h3 {
+  margin-bottom: 10px;
+}
+.information p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.information span, .information span a {
+  color: #d35649;
+}
+.information span:hover{
+  text-decoration: underline;
+}
+.information .inputGroup {
+  display: flex;
+  justify-content: center;
+}
+.information input[type="text"] {
+  padding: 7px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.213);
+  border-right: none;
+  border-radius: 2px;
+}
+.information input[type="submit"] {
+  padding: 10px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+/* Copyright */
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f1f1f;
+  padding: 20px;
+  color: white;
+}
+.social {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+.copyright .social i:hover{
+  color:#509bd7;
+  cursor: pointer;
+}
+.reserved p {
+  font-size: 12px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .navigations {
+    width: 45%;
+  }
+  .banner h2 {
+    font-size: 18px;
+  }
+  .desc img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (max-width: 895px) {
+  footer {
+    padding: 8px 8px 0 8px;
+  }
+  .barre > div {
+    height: 30px;
+  }
+  .barre span {
+    font-size: 15px;
+  }
+  .barre > i {
+    width: 50px;
+    height: 50px;
+  }
+  .information > div {
+    padding: 15px 15px 0 15px;
+  }
+  .information p {
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 730px) {
+  nav {
+    display: block;
+  }
+  .logo {
+    justify-content: center;
+    align-items: center;
+  }
+  .logo h1 {
+    font-size: 35px;
+  }
+  .logo img {
+    width: 120px;
+  }
+  /* Navigations */
+  .navigations {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .navigation i {
+    font-size: 25px;
+  }
+  .navigation span {
+    display: none;
+  }
+  /* Banner */
+  .banner {
+    height: 85vh;
+  }
+  .banner h2 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.453);
+  }
+  .groupInput input[type="text"] {
+    width: 100%;
+  }
+  .banner .searchBar .groupInput {
+    flex-direction: column;
+  }
+  .banner button {
+    font-weight: bold;
+  }
+  /* -----Corps de page ------- */
+  /* Categorie */
+  .categorieTitle,
+  .categorieEvents {
+    display: none;
+  }
+  .corpsPage {
+    margin-top: 0;
+  }
+  /* description */
+  .desc {
+    display: block;
+    padding: 10px;
+  }
+  .desc img {
+    display: none;
+  }
+  .inverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .desc div {
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    border-radius: 50px;
+    padding: 40px;
+    position: relative;
+  }
+  .desc h3 {
+    position: absolute;
+    top: 115px;
+  }
+  .desc p {
+    position: absolute;
+    top: 50px;
+    font-weight: bold;
+  }
+  .desc button {
+    background-color: transparent;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 150px;
+  }
+  .desc1 div {
+    background-image: url("../Assets/Images/group-2.jpg");
+  }
+  .desc2 div {
+    background-image: url("../Assets/Images/group-4.jpg");
+  }
+  .desc3 div {
+    background-image: url("../Assets/Images/group-3.jpg");
+  }
+
+  /* Footer */
+  footer {
+    display: none;
+  }
+  /* Copyright */
+  .social {
+    width: 40%;
+    flex-wrap: wrap;
+  }
+  .reserved p {
+  }
+}

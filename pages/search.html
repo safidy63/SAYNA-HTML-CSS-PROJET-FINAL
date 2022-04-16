@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link
+      rel="stylesheet"
+      href="../Assets/Font-Awesome-master/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/search.css" />
+  </head>
+  <body>
+    <!-- En tête de page -->
+    <header>
+      <nav>
+        <a href="../index.html" class="logo">
+          <img src="../Assets/Images/group-2.svg" alt="logo" />
+          <h1>[Events]</h1>
+        </a>
+        <div class="navigations">
+          <div class="navigation">
+            <i class="fas fa-search"></i>
+            <span>Search</span>
+          </div>
+          <a class="navigation" href="about.html">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+          </a>
+          <div class="navigation">
+            <i class="fas fa-wifi"></i>
+            <span>Blog</span>
+          </div>
+          <div class="navigation">
+            <i class="fas fa-list"></i>
+            <span>More</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Search content -->
+    <div class="searchContent">
+      <div class="filter">
+        <h1>Filter by location, host, subject, date, daytime:</h1>
+        <div class="input">
+          <div class="groupInputSearch">
+            <label for="location">Location</label>
+            <input type="text" id="location" />
+          </div>
+          <div class="groupInputSearch">
+            <label for="host">Host</label>
+            <input type="text" id="host" />
+          </div>
+          <div class="ligne1">
+            <div class="groupInputSearch">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" />
+            </div>
+            <div class="groupInputSearch">
+              <label for="initial">Initial Date</label>
+              <input type="date" id="initial" />
+            </div>
+          </div>
+          <div class="ligne2">
+            <div class="groupInputSearch">
+              <label for="final">Final Date</label>
+              <input type="date" id="final" />
+            </div>
+            <div class="groupInputSearch">
+              <label for="daytime">Daytime</label>
+              <select id="daytime">
+                <option>Choose ...</option>
+              </select>
+            </div>
+            <div class="groupInputSearch">
+              <div></div>
+              <button type="submit" class="btn-search">Search</button>
+            </div>
+            <div class="groupInputSearch">
+              <div></div>
+              <button type="submit" class="btn-filter">
+                <i class="fas fa-edit"></i> Clear Filter
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Search Result  -->
+      <h2 class="searchTitle">Search Result Found 7 [Events] Nearby.</h2>
+      <div class="searchResult">
+        <!-- Example -->
+        <a href="about.html" class="example">
+          <h3>go to [gathering] example</h3>
+          <img src="../Assets/Images/group-2.svg" alt="logo" />
+        </a>
+        <a href="about.html" class="example">
+          <h3>go to [gathering] example</h3>
+          <img src="../Assets/Images/group-2.svg" alt="logo" />
+        </a>
+        <a href="about.html" class="example">
+          <h3>go to [gathering] example</h3>
+          <img src="../Assets/Images/group-2.svg" alt="logo" />
+        </a>
+      </div>
+    </div>
+    <!-- Pied de page -->
+    <footer>
+      <!-- Navbar -->
+      <div class="barre">
+        <div>
+          <span>HOME</span>
+          <span>SEARCH</span>
+          <span>ABOUT US</span>
+          <span>ADVERTISE</span>
+        </div>
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <span>FACEBOOK</span>
+          <span>TWITTER</span>
+          <span>INSTAGRAM</span>
+          <span>BLOG</span>
+        </div>
+      </div>
+      <!-- Information -->
+      <div class="information">
+        <!--Subscribe-->
+        <div>
+          <h3>Subscribe</h3>
+          <div class="inputGroup">
+            <input type="text" placeholder="Insert your e-mail here" />
+            <input type="submit" value="send" />
+          </div>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h3>Contact</h3>
+          <p>Have a question or sugestion?</p>
+          <span>contact@events.com</span>
+        </div>
+        <!-- About -->
+        <div>
+          <h3>About</h3>
+          <p>
+            [Events] is an online plataform that works to improve and increase
+            social life conections, when this nightmare that we are curently
+            living in is over <span>learn more.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright -->
+    <div class="copyright">
+      <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tumblr"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+      <div class="reserved">
+        <p>&copy 2020 [Events], Inc. All rights reserved</p>
+      </div>
+    </div>
+  </body>
+</html>
